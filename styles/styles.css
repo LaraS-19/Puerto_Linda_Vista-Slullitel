@@ -1,0 +1,137 @@
+/* Mobile*/
+.indexBG {
+    background-image: url("../images/el_puerto_2.jpg");
+}
+
+body {
+    display:grid; 
+    grid-template-rows: auto 1fr auto; 
+    min-height:100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #1e3c54;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(78, 83, 85, 0.7);
+    padding: 10px;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+}
+
+.navBar {
+    border-radius: 10px;
+    border: 0.5px solid #ffffff;
+    background-color: rgb(12, 30, 31, 0.8);
+}
+
+.navBar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar ul li {
+    margin: 0;
+    padding: 05px;
+}
+
+.navBar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navBar ul li a:hover {
+    color:#0094D9;
+}
+
+h1 {
+    font-family: 'Damion', cursive;
+    color: #0094D9;
+    padding: 10px;
+}
+
+h2 {
+    font-family: 'Damion', cursive;
+    text-align: center; 
+    color: #ffffff;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+main {
+    color:#ffffff;
+}
+
+section {
+    display: grid;
+    grid-template-rows: 100px 100px;
+}
+
+div {
+    background-color: rgba(78, 83, 85, 0.7);
+    padding: 10px;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;  
+}
+
+.textoComoLlego {
+    background-color: rgba(78, 83, 85, 0.7);
+    padding: 10px;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;   
+}
+
+fieldset {
+    text-align: center;
+    width: 28%;
+}
+
+fieldset label {
+    color: rgb(12, 30, 31, 10);
+}
+
+fieldset span {
+    color: rgb(12, 30, 31, 10);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(78, 83, 85, 0.7);
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+    bottom: 0px; 
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Desktop*/
+@media screen (min-width 1200px) {
+    section {
+        display: grid;
+        grid-template-rows: 100px 100px;
+    }
+    
+    div {
+        background-color: rgba(78, 83, 85, 0.7);
+        padding: 10px;
+        border: 0.5px solid #ffffff;
+        border-radius: 5px;  
+}
