@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(78, 83, 85, 0.7);
+    background-image: linear-gradient(to left, rgba(78, 83, 85, 0.7), rgba(255, 255, 255, 0.705));
     padding: 10px;
     border: 0.5px solid #ffffff;
     border-radius: 5px;
@@ -107,7 +107,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(78, 83, 85, 0.7);
+    background-image: linear-gradient(to left, rgba(78, 83, 85, 0.7), rgba(255, 255, 255, 0.705));
     border: 0.5px solid #ffffff;
     border-radius: 5px;
     bottom: 0px; 
@@ -122,16 +122,3 @@ footer a {
     font-size: 13px;
 }
 
-/* Desktop*/
-@media screen (min-width 1200px) {
-    section {
-        display: grid;
-        grid-template-rows: 100px 100px;
-    }
-    
-    div {
-        background-color: rgba(78, 83, 85, 0.7);
-        padding: 10px;
-        border: 0.5px solid #ffffff;
-        border-radius: 5px;  
-}
