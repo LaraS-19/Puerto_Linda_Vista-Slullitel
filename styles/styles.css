@@ -1,4 +1,4 @@
-/* Mobile*/
+/* Desktop*/
 .indexBG {
     background-image: url("../images/el_puerto_2.jpg");
 }
@@ -45,10 +45,12 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 13px;
+    transition: 1.3s ease-out;
 }
 
 .navBar ul li a:hover {
     color:#0094D9;
+    font-size: 15px;
 }
 
 h1 {
@@ -73,8 +75,9 @@ main {
 
 section {
     display: grid;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 100px 200px;
 }
+
 
 div {
     background-color: rgba(78, 83, 85, 0.7);
@@ -120,5 +123,12 @@ footer a {
     color: #ffffff;
     text-decoration: none;
     font-size: 13px;
+}
+
+/*Mobile*/
+@media screen (min-width:320px) {
+    nav {
+        display:none; 
+    }
 }
 
