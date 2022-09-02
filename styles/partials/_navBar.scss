@@ -1,0 +1,25 @@
+.navBar {
+  border-radius: 10px;
+  border: 0.5px solid #ffffff;
+  background-color: rgb(12, 30, 31, 0.8);
+    ul {
+     display: flex;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+        li {
+         margin: 0;
+         padding: 05px;
+            a {
+             color: #ffffff;
+             text-decoration: none;
+             font-size: 12px;
+             transition: 1s ease-out;
+             &:hover {
+                color:#0094D9;
+                font-size: 15px; 
+                }
+            }
+        }
+    }
+}
