@@ -80,13 +80,6 @@ div {
   border-radius: 5px;
 }
 
-.textoComoLlego {
-  background-color: rgba(78, 83, 85, 0.7);
-  padding: 10px;
-  border: 0.5px solid #ffffff;
-  border-radius: 5px;
-}
-
 fieldset {
   text-align: center;
   width: 28%;
@@ -114,4 +107,11 @@ footer a {
   color: #ffffff;
   text-decoration: none;
   font-size: 13px;
+}
+
+aside {
+  background-color: rgba(78, 83, 85, 0.7);
+  padding: 10px;
+  border: 0.5px solid #ffffff;
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */
