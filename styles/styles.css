@@ -48,6 +48,11 @@ body {
   font-size: 15px;
 }
 
+@media screen and (max-width: 650px) {
+  .navBar {
+    display: none;
+  }
+}
 h1 {
   font-family: "Damion", cursive;
   color: #0094D9;
@@ -74,6 +79,11 @@ section {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 650px) {
+  section p {
+    display: none;
+  }
+}
 fieldset {
   text-align: center;
   width: 28%;
