@@ -68,6 +68,12 @@ main {
   color: #ffffff;
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 fieldset {
   text-align: center;
   width: 28%;
