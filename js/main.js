@@ -11,8 +11,8 @@ const datosBusqueda = {
 
 function mostrarbarcos(barcos){
     barcos.forEach(barco => {
-        console.log(`${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision} - Precio: ${barco.precio} - Color: ${barco.color}`) 
-        document.write(`<p>${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision} - Precio: ${barco.precio} - Color: ${barco.color}</p>`)        
+        console.log(`${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision}`) 
+        document.write(`<p>${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision}</p>`)        
 
     });
 }
