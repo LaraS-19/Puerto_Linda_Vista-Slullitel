@@ -1,27 +1,26 @@
 const datosBusqueda = {
-    marca: '',
-    year: '',
+    nombre: '',
+    muelle: '',
     minimo: '',
     maximo: 60000,
-    puertas: '',
-    transmision: '',
-    color: ''
+    año: '',
+    estadía: '',
 }
 
 
-function mostrarbarcos(barcos){
+function mostrarBarcos(barcos){
     barcos.forEach(barco => {
-        console.log(`${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision}`) 
-        document.write(`<p>${barco.marca} ${barco.modelo} - ${barco.year} - ${barco.puertas} Puertas - Transmision: ${barco.transmision}</p>`)        
+        console.log(`${barco.nombre} ${barco.tamaño} - ${barco.muelle} - ${barco.año} año - estadía: ${barco.estadía}`) 
+        document.write(`<p>${barco.nombre} ${barco.tamaño} - ${barco.muelle} - ${barco.año} año - estadía: ${barco.estadía}</p>`)        
 
     });
 }
 
 
-function filtrarbarco(){
-    const resultado = barcos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarPuertas).filter(filtrarTransmision).filter(filtrarColor)
+function filtrarBarco(){
+    const resultado = barcos.filter(filtrarNombre).filter(filtrarMuelle).filter(filtrarMinimo).filter(filtrarMaximo).filter(filtrarAño).filter(filtrarEstadía)
     if(resultado.length){
-        mostrarbarcos(resultado)
+        mostrarBarcos(resultado)
     }else {
         noResultados()
     }
@@ -33,16 +32,16 @@ function noResultados(){
 }
 
 
-function filtrarMarca(barco){
-    if(datosBusqueda.marca){
-        return barco.marca === datosBusqueda.marca
+function filtrarNombre(barco){
+    if(datosBusqueda.nombre){
+        return barco.nombre === datosBusqueda.nombre
     }
     return barco;
 }
 
-function filtrarYear(barco){
-    if(datosBusqueda.year){
-        return barco.year === datosBusqueda.year
+function filtrarMuelle(barco){
+    if(datosBusqueda.muelle){
+        return barco.muelle === datosBusqueda.muelle
     }
     return barco;
 }
@@ -61,27 +60,19 @@ function filtrarMaximo(barco){
     return barco;
 }
 
-
-function filtrarPuertas(barco){
-    if(datosBusqueda.puertas){
-        return barco.puertas === datosBusqueda.puertas
+function filtrarAño(barco){
+    if(datosBusqueda.año){
+        return barco.año === datosBusqueda.año
     }
     return barco;
 }
 
-function filtrarTransmision(barco){
-    if(datosBusqueda.transmision){
-        return barco.transmision === datosBusqueda.transmision
-    }
-    return barco;
-}
-
-function filtrarColor(barco){
-    if(datosBusqueda.color){
-        return barco.color === datosBusqueda.color
+function filtrarEstadía(barco){
+    if(datosBusqueda.estadía){
+        return barco.estadía === datosBusqueda.estadía
     }
     return barco;
 }
 
 //mostrarbarcos(barcos)
-filtrarbarco()
+filtrarBarco()
