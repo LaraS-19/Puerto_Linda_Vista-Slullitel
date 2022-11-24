@@ -1,3 +1,8 @@
+let elemento = document
+
+elemento = document.head
+elemento = document.body
+
 const datosBusqueda = {
     nombre: '',
     muelle: '',
@@ -30,7 +35,6 @@ function noResultados(){
     console.log("No hay resultados")
     document.write("No hay resultados")
 }
-
 
 function filtrarNombre(barco){
     if(datosBusqueda.nombre){
