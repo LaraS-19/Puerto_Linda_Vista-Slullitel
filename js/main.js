@@ -1,7 +1,10 @@
-let elemento = document
+const cite = document.querySelector ('cite')
 
-elemento = document.head
-elemento = document.body
+console.dir(cite)
+
+cite.addEventListener('click', ()=>{
+    alert ('Click en formulario')
+})
 
 const datosBusqueda = {
     nombre: '',
@@ -31,10 +34,10 @@ function filtrarBarco(){
     }
 }
 
-function noResultados(){
-    console.log("No hay resultados")
+/*function noResultados(){
+    console.log("resultados")
     document.write("No hay resultados")
-}
+}*/ 
 
 function filtrarNombre(barco){
     if(datosBusqueda.nombre){
