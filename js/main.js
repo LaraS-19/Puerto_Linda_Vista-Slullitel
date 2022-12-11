@@ -1,10 +1,6 @@
-const cite = document.querySelector ('cite')
+const order = [];
 
-console.dir(cite)
-
-cite.addEventListener('click', ()=>{
-    alert ('Click en formulario')
-})
+document.addEventListener('DOMContentLoaded', ()=> {})
 
 const datosBusqueda = {
     nombre: '',
@@ -14,7 +10,6 @@ const datosBusqueda = {
     año: '',
     estadía: '',
 }
-
 
 function mostrarBarcos(barcos){
     barcos.forEach(barco => {
@@ -34,10 +29,7 @@ function filtrarBarco(){
     }
 }
 
-/*function noResultados(){
-    console.log("resultados")
-    document.write("No hay resultados")
-}*/ 
+function noResultados(){}
 
 function filtrarNombre(barco){
     if(datosBusqueda.nombre){
