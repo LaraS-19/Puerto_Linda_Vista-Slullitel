@@ -1,6 +1,31 @@
+let links = document.querySelectorAll('navBar a')
+
+for(let link of links){
+    link.addEventListener('click', cargarPagina)
+}
+
+function cargarPagina(evt){
+    evt.preventDefault()
+
+    const url = evt.target.dataset.pagina + ".html"
+
+    const lindaVista = document.querySelector('main')
+
+    fetch(url)
+        .then( (pagina)=> {
+            return pagina.text()
+        })
+        .then( (page)=>{
+            lindaVista.innerHTML = page
+        })
+        .catch ( err => console.log(err))
+}
+
 const order = [];
 
 document.addEventListener('DOMContentLoaded', ()=> {})
+
+Swal.fire('Escríbenos para consultar disponibilidad en el puerto')
 
 const datosBusqueda = {
     nombre: '',
@@ -73,5 +98,15 @@ function filtrarEstadía(barco){
     return barco;
 }
 
-//mostrarbarcos(barcos)
 filtrarBarco()
+
+localStorage.setItem('Barco1', 'Viento Blanco')
+localStorage.setItem('Barcaza1', 'Coop 19')
+localStorage.setItem('Barcaza2', 'Coop 23')
+localStorage.setItem('Barcaza3', 'Mapuche')
+localStorage.setItem('Barcaza4', 'Azabache')
+localStorage.setItem('Barco2', 'EP Chaplin')
+localStorage.setItem('Barco3', 'Campesino')
+localStorage.setItem('Barco4', 'Zapukay')
+localStorage.setItem('Barco5', 'Nonej')
+localStorage.setItem('Barcaza5', 'Derpeth')
